@@ -1,0 +1,7 @@
+extra/
+
+.exe
+.obj
+.o
+
+.class
