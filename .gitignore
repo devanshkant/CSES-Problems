@@ -1,7 +1,6 @@
 extra/
 
-.exe
-.obj
-.o
-
-.class
+*.exe
+*.obj
+*.o
+*.class

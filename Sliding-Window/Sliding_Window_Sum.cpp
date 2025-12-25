@@ -15,18 +15,18 @@ int main (){
         else
             arr[i] = (a*arr[i-1] + b) % c;
     }
-    int i = 0;
+    int left = 0;
     ll window_sum = 0, ans = 0;
-    for(int j = 0; j < n; ++j){
-        window_sum += arr[j];
+    for(int right = 0; right < n; ++right){
+        window_sum += arr[right];
 
-        if(j - i + 1 < k){
+        if(right - left + 1 < k){
             continue;
         }
         else{
             ans = ans ^ window_sum;
-            window_sum -= arr[i];
-            ++i;
+            window_sum -= arr[left];
+            ++left;
         }
     }
     cout << ans <<'\n';
