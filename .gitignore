@@ -4,6 +4,7 @@ extra/
 *.obj
 *.o
 
+*.txt
 *.in
 *.out
 *.class
