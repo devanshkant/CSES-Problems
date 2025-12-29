@@ -1,6 +1,9 @@
 extra/
-
+.vscode/
 *.exe
 *.obj
 *.o
+
+*.in
+*.out
 *.class
